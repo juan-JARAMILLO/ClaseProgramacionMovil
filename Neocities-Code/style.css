@@ -1,0 +1,95 @@
+body{
+    background: url(/imagenes/Fondo.jpg);
+    font-family: Apple Chancery, cursive;
+}
+
+#container{
+    background: rgb(65, 65, 65);
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+header{
+    background: url(/imagenes/FondoCabeza.jpg);
+    text-align: center;
+    line-height: 100px;
+    color: whitesmoke;
+}
+
+nav{
+    background: rgb(94, 94, 94);
+    height: 50px;
+    border: 5px solid darkblue;
+    margin: 10px;
+}
+
+
+
+footer{
+    color: white;
+    background: black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.titulo1{
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-style: double;
+    background: #272727;
+}
+
+.contenido1{
+    background: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.titulo3{
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-style: double;
+    background: #272727; 
+    line-height: 0px;
+}
+
+.titulo2{
+    margin: 10px;
+    color: white;
+    text-align: center;
+    border-style: double;
+    background: #272727; 
+    line-height: 0px;
+}
+
+.proyectos{
+    margin: 10px;
+    color: white;
+    text-align: left;
+    border-style: double;
+    background: #272727;
+    line-height: 40px;
+}
+
+.f{
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: auto;
+    margin: auto;
+}
+
+.h{
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: auto;
+    margin-left: 95px;
+}
+
+#id{
+    background: rgb(0, 0, 0);
+}

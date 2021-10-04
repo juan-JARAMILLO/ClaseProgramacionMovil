@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            Portafolio De Juan Jaramillo Henao
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id= container>
+        <header>
+        <h1> <strong> Portafolio De Juan Jaramillo Henao </strong> </h1>
+        </header>
+        <section id="content">
+        <article class="titulo1">
+        <h2>Bienvenido</h2>
+        </article>
+        <article class="contenido1">
+        <p>En este lugar se encontrara informacion relacionada a la clase de <strong>Programacion Web Movil</strong></p>
+        </article>
+        
+        <article class="titulo2">
+        <h3>Lista de proyectos de la asignatura</h3>
+        </article>
+        <article class="proyectos">
+        <ul>
+            <li><a href="/Solucion Reto/index.html">Solucion Reto</a></li>
+            <li><a href="/SopaDeLetras/index.html">Sopa De Letras</a></li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+        </article>
+        </section>
+        
+        <article class="titulo3">
+            <h2>Links</h2>
+        </article>    
+        <nav>
+        <ul>
+            <article class="f">
+          <li><a href="/HojaDeVida/HojaDeVida.html">Hoja De Vida</a></li>
+        </article>
+        <article class="h">
+          <li><a href="SobreMi.html">Acerca De Mi</a></li>
+        </article>
+        </ul>
+        </nav>
+    </div>
+        <footer>
+            <div id="copyright">
+                <p>&copy; 2021 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Juan Jaramillo</a></p>
+            </div>
+            <script>
+                function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+                    var main = document.getElementById("main");
+                    var coimg = document.getElementById("coimg");
+                  if (dots.style.display === "none") {
+                      dots.style.display = "inline";
+                      btnText.innerHTML = "Read more";
+                      moreText.style.display = "none";
+                      main.style.display = "flex";
+                      coimg.style.width = "350px";
+                      
+                      
+                  } else {
+                      dots.style.display = "none";
+                      btnText.innerHTML = "Read less";
+                      moreText.style.display = "inline";
+                      main.style.display = "block";
+                      coimg.style.width = "100%";
+                      coimg.style.transition = "all 1s";
+                    }
+            }
+            </script>
+            <script src="js/main.js" type="text/javascript"></script>
+        </footer>
+    </body>
+</html>
