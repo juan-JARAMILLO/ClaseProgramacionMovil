@@ -1,0 +1,237 @@
+#header {
+    background-image: url(../images/bg-pattern-intro.svg), linear-gradient(90deg, $Very-light-red-gradient, $Light-red);
+    background-repeat: no-repeat;
+    background-position-y:  52.2%;
+    background-position-x: 25.5%;
+
+
+    border-radius:  0 0 0 100px;
+
+    #header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 77%;
+        padding: 63px 0 0 0;
+        margin: auto;
+        #header-logo {
+            width: 15%;
+        }
+        #header-menu {
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            ul {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                margin: 3px 0;
+                width: 100%;
+                padding: 0;
+                li {
+                    position: relative;
+                    display: flex;
+                    font-family: $Font-Ubuntu;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: hsla(0, 0%, 100%, 0.7);
+                    margin: 0 5% 0 0;
+                    list-style-type: none;
+                    cursor: pointer;
+                    transition: 100ms cubic-bezier(0, 1.5, 1, 1.5);
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: $White;
+                        bottom: -1px;
+                        left: 50%;
+                        width: 0%;
+                        height: 2px;
+                        transition: 200ms ease-in-out;
+                    }
+                    
+                    &::after {
+                        content: url(../images/icon-arrow-light.svg);
+                        margin-left: 10%;
+                        cursor: pointer;
+                        transition: 200ms linear;
+                    }
+                    
+                    
+                    &:hover {
+                        color:  $White;
+                        &::before {
+                            left: 0%;
+                            width: 100%;
+                        }
+                    }
+
+                    
+                }
+                
+                
+                .pop-up-show {
+                    transform: translateY(0%) scale(1) !important;
+                         
+                }
+                .arrow-rotation {
+                    &::after {
+                        transform: rotate(-180deg) translateY(-25%);
+                    }
+                }
+                .pop-up-menu {
+                    position: absolute;
+                    top: 45px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $White;
+                    border-radius: 7px;
+                    margin: 0px 0px 0 -21px;
+                    padding: 22px 55px 22px 15px;
+                    box-shadow: 0px 15px 40px #0000005e;
+                    cursor: default;
+                    transition: 200ms linear;
+                    transform: translateY(-60%) scale(0);
+                    &:nth-of-type(2) {
+                        left: 14%;
+                    }
+                    &:last-of-type {
+                        left: 30%;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.8);
+                        margin: 8px 10px;
+                        font-size: 15px;
+                        font-family: $Font-Overpass;
+                        font-weight: 300;
+                        transition: 150ms linear;
+                        &:hover {
+                            color: rgba(0, 0, 0, 1);
+                            text-shadow: 0px 0px 1px black;
+                        }
+                    }
+                }
+                
+                
+            }
+            a {
+                font-family: $Font-Ubuntu;
+                position: relative;
+                text-decoration: none;
+                margin-right: 3%;
+                font-size: 16px;
+                font-weight: 500;
+                color: $White;
+                transition: 300ms cubic-bezier(0, 1.5, 1, 1.5);
+                opacity: 0.7;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: $White;
+                    bottom: -1px;
+                    left: 50%;
+                    width: 0%;
+                    height: 2px;
+                    transition: 200ms ease-in-out;
+                }
+                &:hover {
+                    opacity: 1;
+                    &::before {
+                        left: 0%;
+                        width: 100%;
+                    }
+                }
+            }
+            .header-sign-up {
+                width: 18%;
+                height: 110%;
+                background-color: $White;
+                color: $Light-red;
+                transition: 600ms cubic-bezier(0, 1.5, 1, 1.5);
+                &:hover {
+                    color: $White;
+                    background-color: $Very-light-red;
+                }
+            }
+            
+        }
+
+        #header-login {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+            font-family: $Font-Ubuntu;
+
+            
+        }
+        #mobile-menu-icon {
+            display: none;
+        }
+    }
+    
+    #greetings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 130px 0 0 0;
+        h1 {
+            margin: 0;
+            font-family: $Font-Overpass;
+            font-size: 64px;
+            letter-spacing: -2px;
+            color: $White;
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            margin: 10px 0 0 0;
+            font-family: $Font-Overpass;
+            font-size: 20px;
+            font-weight: 300;
+            color: $White;
+            opacity: 0.8;
+        }
+        #buttons {
+            margin: 46px 0 0 0;
+            padding: 0 0 155px 0;
+            .start-4-free {
+                background-color: $White;
+                color: $Light-red;
+                margin: 0 6px;
+                transition: 600ms cubic-bezier(0, 1.5, 1, 1.5);
+                &:hover {
+                    color: $White;
+                    background-color: $Very-light-red;
+                }
+            }
+            .learn-more {
+                border: 1px solid $White;
+                background-color: transparent;
+                color: $White;
+                margin: 0 6px;
+                transition: 600ms cubic-bezier(0, 1.5, 1, 1.5);
+                &:hover {
+                    color: $Light-red;
+                    background-color: $White;
+                }
+            }
+        }
+    }
+    .button {
+        font-family: $Font-Ubuntu;
+        border: none;
+        padding: 0;
+        width: 136px;
+        height: 48px;
+        border-radius: 30px;
+        min-width: 74px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

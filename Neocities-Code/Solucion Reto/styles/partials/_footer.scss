@@ -1,0 +1,101 @@
+#footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 359px;
+    background-color: $Very-dark-black-blue;
+    border-radius: 0 100px 0 0;
+
+    .attribution {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        top: -14%;
+        text-align: center;
+        font-family: $Font-Ubuntu;
+        color: $Very-dark-black-blue;
+        font-weight: 500;
+        a {
+            position: relative;
+            text-decoration: none;
+            font-family: $Font-Overpass;
+            font-weight: 700;
+            color: $Light-red;
+            transition: 200ms linear;
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $Light-red;
+                bottom: -1px;
+                left: 50%;
+                width: 0%;
+                height: 2px;
+                transition: 200ms ease-in-out;
+            }
+            &:hover {
+                color: red;
+                &::before {
+                    left: 0%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #footer-logo {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        img {
+            margin: 70px 22px 0 0;
+        }
+    }
+    #footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 55%;
+        margin: 65px auto;
+        font-family: $Font-Ubuntu;
+        .links {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 25% 0 0px;
+            p {
+                color: $White;
+                font-size: 15px;
+                margin-bottom: 35px;
+                margin-top: 12px;
+            }
+            a {
+                position: relative;
+                text-decoration: none;
+                color: $White;
+                font-size: 15px;
+                margin-bottom: 15px;
+                width: max-content;
+                opacity: 0.7;
+                transition: 200ms linear;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: $White;
+                    bottom: -1px;
+                    left: 50%;
+                    width: 0%;
+                    height: 2px;
+                    transition: 200ms ease-in-out;
+                }
+                &:hover {
+                    opacity: 1;
+                    &::before {
+                        left: 0%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
